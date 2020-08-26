@@ -25,6 +25,13 @@ body {
   color: white;
   font-size: 40px;
 }
+#header .white-chevron {
+  color: white;
+}
+i {
+  color: #6d31a8;
+  width: 30px;
+}
 footer {
   background: #6d31a8;
   color: white;
