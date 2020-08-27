@@ -3,6 +3,10 @@ body {
 }
 #navbar {
   padding: 10px;
+  text-align: center;
+}
+#navbar ul {
+  padding: 0;
 }
 #navbar li {
   display: inline;
@@ -28,6 +32,27 @@ body {
 #header .white-chevron {
   color: white;
 }
+h3 {
+  text-align: center;
+}
+img {
+  transition: all 200ms ease-in-out;
+  margin: 10px;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#projects,
+#about-me,
+#tech-stack,
+#contact {
+  margin: 20px 25px;
+}
 i {
   color: #6d31a8;
   width: 30px;
@@ -36,4 +61,5 @@ footer {
   background: #6d31a8;
   color: white;
   padding: 10px;
+  margin: 10px 0;
 }
