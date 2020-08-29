@@ -2,22 +2,62 @@ body {
   font-family: "Open Sans", sans-serif;
   background: aliceblue;
 }
-#navbar {
-  padding: 10px;
-  text-align: center;
+#sidenav {
+  background: #030a46;
+  z-index: 20;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
-#navbar ul {
-  padding: 0;
-}
-#navbar li {
-  display: inline;
-  padding: 20px;
-  margin-left: 30px;
-}
-#navbar a {
-  color: black;
+#sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
 }
+#sidenav a:hover {
+  color: #9a2b91;
+}
+#sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  color: #030a46;
+}
+#menu:hover,
+.closebtn:hover {
+  cursor: pointer;
+}
+#container {
+  transition: margin-right 0.5s;
+  padding: 5px 45px 5px 5px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  #sidenav {
+    padding-top: 15px;
+  }
+  #sidenav a {
+    font-size: 18px;
+  }
+}
+
 #header #name {
   font-size: 40px;
 }
@@ -68,14 +108,14 @@ h3 {
   margin: 20px 25px;
 }
 i {
-  color: #6d31a8;
+  color: #030a46;
   width: 30px;
 }
 a {
   color: black;
 }
 footer {
-  background: #6d31a8;
+  background: #030a46;
   color: white;
   padding: 10px;
   margin: 10px 0;
