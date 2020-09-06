@@ -32,14 +32,24 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-#menu {
+#menu-button {
   position: fixed;
   top: 0;
   right: 10px;
   font-size: 40px;
-  color: #030a46;
+  background: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
 }
-#menu:hover,
+.fa-bars {
+  color: #9a2b91;
+}
+#menu {
+  font-size: 20px;
+  color: #9a2b91;
+}
+#menu-button:hover,
 .closebtn:hover {
   cursor: pointer;
 }
