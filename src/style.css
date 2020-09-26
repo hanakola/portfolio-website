@@ -125,8 +125,6 @@ h3 {
 }
 .project {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .project-description {
   margin: 10px;
