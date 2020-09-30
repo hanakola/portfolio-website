@@ -67,7 +67,7 @@ body {
   height: auto;
   opacity: 0.6;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 #header #name {
   font-size: 60px;
@@ -140,4 +140,79 @@ footer {
   color: white;
   padding: 10px;
   margin: 10px 0;
+}
+
+@media screen and (max-height: 450px) {
+  #sidenav {
+    padding-top: 15px;
+  }
+  #sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #header #name,
+  #job-title {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+  }
+  #projects {
+    margin-top: 220px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #header #name,
+  #job-title {
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+  }
+  #projects {
+    margin-top: 320px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 841px) {
+  #header #name,
+  #job-title {
+    position: relative;
+    top: 60px;
+  }
+  #projects {
+    margin-top: 380px;
+  }
+}
+@media screen and (min-width: 842px) and (max-width: 940px) {
+  #header #name,
+  #job-title {
+    position: relative;
+    top: 80px;
+  }
+  #projects {
+    margin-top: 400px;
+  }
+}
+@media screen and (min-width: 941px) and (max-width: 1000px) {
+  #projects {
+    margin-top: 430px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  #projects {
+    margin-top: 500px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #projects {
+    margin-top: 800px;
+  }
 }
