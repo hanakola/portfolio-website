@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -78,7 +80,7 @@ body {
 #header #name,
 #job-title {
   position: relative;
-  top: 130px;
+  top: 150px;
   text-align: center;
   color: white;
   text-shadow: 3px 3px black;
@@ -113,7 +115,7 @@ h3 {
   margin: 20px 25px;
 }
 #projects {
-  margin-top: 650px;
+  margin-top: 730px;
 }
 .project {
   display: grid;
@@ -151,7 +153,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 380px) {
   #header #name,
   #job-title {
     position: relative;
@@ -159,7 +161,22 @@ footer {
     font-size: 30px;
   }
   #projects {
-    margin-top: 220px;
+    margin-top: 180px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 575px) {
+  #header #name,
+  #job-title {
+    position: relative;
+    top: 50px;
+    font-size: 30px;
+  }
+  #projects {
+    margin-top: 270px;
   }
   .project {
     display: grid;
@@ -170,11 +187,11 @@ footer {
   #header #name,
   #job-title {
     position: relative;
-    top: 40px;
+    top: 80px;
     font-size: 40px;
   }
   #projects {
-    margin-top: 320px;
+    margin-top: 400px;
   }
   .project {
     display: grid;
@@ -185,34 +202,34 @@ footer {
   #header #name,
   #job-title {
     position: relative;
-    top: 60px;
+    top: 80px;
   }
   #projects {
-    margin-top: 380px;
+    margin-top: 450px;
   }
 }
 @media screen and (min-width: 842px) and (max-width: 940px) {
   #header #name,
   #job-title {
     position: relative;
-    top: 80px;
+    top: 100px;
   }
   #projects {
-    margin-top: 400px;
+    margin-top: 470px;
   }
 }
 @media screen and (min-width: 941px) and (max-width: 1000px) {
   #projects {
-    margin-top: 430px;
+    margin-top: 520px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1100px) {
   #projects {
-    margin-top: 500px;
+    margin-top: 580px;
   }
 }
 @media screen and (min-width: 1300px) {
   #projects {
-    margin-top: 800px;
+    margin-top: 850px;
   }
 }
