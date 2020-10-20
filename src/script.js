@@ -1,11 +1,14 @@
-function openNav() {
-  document.getElementById("sidenav").style.width = "250px";
-  document.getElementById("container").style.marginRight = "200px";
-  document.body.style.backgroundColor = "lightgrey";
-}
+window.onscroll = function () {
+  stickyNavbar();
+};
 
-function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
-  document.getElementById("container").style.marginRight = "0";
-  document.body.style.backgroundColor = "aliceblue";
+let navbar = document.getElementById("navbar");
+let sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }

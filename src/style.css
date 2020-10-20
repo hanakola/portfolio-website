@@ -8,63 +8,43 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: aliceblue;
 }
-#sidenav {
-  background: #030a46;
+#navbar {
+  overflow: hidden;
+  background-color: #030a46;
   z-index: 20;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
 }
-#sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
+#navbar span,
+#navbar a {
+  float: left;
   display: block;
-  transition: 0.3s;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-#sidenav a:hover {
-  color: gray;
+#navbar span {
+  margin-right: 30px;
 }
-#sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-#menu-button {
-  position: fixed;
-  top: 0;
-  right: 10px;
-  font-size: 40px;
-  background: transparent;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  z-index: 10;
-}
-.fa-bars {
-  color: #030a46;
-}
-#menu-button:hover,
-.closebtn:hover {
+#navbar a {
   cursor: pointer;
 }
+#navbar a:hover {
+  color: gray;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 #container {
-  transition: margin-right 0.5s;
-  padding: 5px 45px 5px 5px;
+  margin: 20px;
 }
 #header #background {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   height: auto;
   opacity: 0.6;
@@ -108,14 +88,13 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-#projects,
+#projects {
+  margin-top: 730px;
+}
 #about-me,
 #tech-stack,
 #contact {
-  margin: 20px 25px;
-}
-#projects {
-  margin-top: 730px;
+  margin-top: 50px;
 }
 .project {
   display: grid;
@@ -160,6 +139,12 @@ footer {
     top: 20px;
     font-size: 30px;
   }
+  #projects,
+  #about-me,
+  #tech-stack,
+  #contact {
+    margin: 10px;
+  }
   #projects {
     margin-top: 180px;
   }
@@ -175,6 +160,12 @@ footer {
     top: 50px;
     font-size: 30px;
   }
+  #projects,
+  #about-me,
+  #tech-stack,
+  #contact {
+    margin: 10px;
+  }
   #projects {
     margin-top: 270px;
   }
@@ -189,6 +180,12 @@ footer {
     position: relative;
     top: 80px;
     font-size: 40px;
+  }
+  #projects,
+  #about-me,
+  #tech-stack,
+  #contact {
+    margin: 10px;
   }
   #projects {
     margin-top: 400px;
