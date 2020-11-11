@@ -43,10 +43,58 @@ body {
   color: gray;
 }
 
+#navbar #nav-mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #252525;
+  opacity: 0.99;
+  z-index: 100;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+#navbar #nav-mobile a {
+  padding: 10px;
+  display: block;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+#navbar #nav-mobile a:hover {
+  color: gray;
+}
+
+#navbar #nav-mobile i {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  color: white;
+  font-size: 25px;
+  transition: all 200ms ease-in-out;
+}
+
+#navbar #nav-mobile i:hover {
+  color: gray;
+}
+
+#navbar #nav-mobile .close-button {
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  font-size: 30px;
+}
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.sticky + #home {
+  padding-top: 50px;
 }
 
 .sticky + .container {
@@ -180,6 +228,20 @@ footer {
   margin-top: -40px;
 }
 
+/*Media queries for the responsive navbar*/
+@media screen and (max-width: 740px) {
+  #navbar .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  #navbar #nav-mobile {
+    display: none;
+  }
+}
+
+/*Media queries for the content*/
 @media screen and (max-width: 380px) {
   #header #name,
   #job-title {

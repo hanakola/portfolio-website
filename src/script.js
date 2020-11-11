@@ -12,3 +12,11 @@ function stickyNavbar() {
     navbar.classList.remove("sticky");
   }
 }
+
+function openMobileMenu() {
+  document.getElementById("nav-mobile").style.width = "100%";
+}
+
+function closeMobileMenu() {
+  document.getElementById("nav-mobile").style.width = "0";
+}
